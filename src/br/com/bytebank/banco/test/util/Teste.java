@@ -9,7 +9,8 @@ public class Teste {
 
 	public static void main(String[] args) {
 
-		ArrayList lista = new ArrayList();
+		//Generics
+		ArrayList<Conta> lista = new ArrayList<Conta>();
 
 		Conta cc = new ContaCorrente(22, 11);
 		lista.add(cc);
@@ -44,8 +45,8 @@ public class Teste {
 		
 		// Há uma forma mais moderna de fazer a iteração sobre a lista (hoje em dia, é mais usado):
 		
-		for(Object oRef : lista) {
-			System.out.println(oRef);
+		for(Conta conta : lista) {
+			System.out.println(conta);
 		}
 		
 	}

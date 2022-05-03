@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 
-public class Teste {
+public class TesteArrayList {
 
 	public static void main(String[] args) {
 
@@ -16,7 +16,7 @@ public class Teste {
 		lista.add(cc);
 
 		Conta cc2 = new ContaCorrente(22, 22);
-		lista.add(cc);
+		lista.add(cc2);
 
 		System.out.println("Tamanho: " + lista.size());
 

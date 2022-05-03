@@ -1,10 +1,10 @@
 package br.com.bytebank.banco.test;
 
-public class Teste {
+public class TesteArrayDePrimitivos {
 
-	// Array[] - A primeira estrutura de dados a aprender;
+	// Array[] - A primeira estrutura de dados a aprender; Ajuda a agrupar informações na mesma estrutura de dados.
 	// É um objeto;
-	// Na hora de criar, eu preciso informar qual o tamanho, caso contrário não
+	// Na hora de criar, eu preciso informar qual o tamanho, que é fixo, caso contrário não
 	// estancia.
 	// Já inicializa o array com os valores padrões, nos caso de int, é zero.
 

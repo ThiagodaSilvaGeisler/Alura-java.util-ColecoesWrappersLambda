@@ -1,6 +1,6 @@
 package br.com.bytebank.banco.test.util;
 
-import java.util.List;
+import java.util.Collection;
 import java.util.Vector;
 
 import br.com.bytebank.banco.modelo.Conta;
@@ -11,7 +11,7 @@ public class TesteArrayList {
 	public static void main(String[] args) {
 
 		//Generics
-		List<Conta> lista = new Vector<Conta>(); //thread safe
+		Collection<Conta> lista = new Vector<Conta>(); //thread safe
 
 		Conta cc = new ContaCorrente(22, 11);
 		lista.add(cc);
@@ -21,7 +21,8 @@ public class TesteArrayList {
 
 		System.out.println("Tamanho: " + lista.size());
 
-		Conta ref = (Conta) lista.get(0);
+		Conta ref = (Conta) lista.get(0);// Com o novo tipo de referência Collection, passou a não funcionar, porque o método
+										//	faz uso de um índice. 
 		
 		System.out.println(ref.getNumero());
 		
@@ -38,7 +39,7 @@ public class TesteArrayList {
 		
 		for( int i = 0; i < lista.size(); i++) {
 			
-			Object oRef = lista.get(i);
+			Object oRef = lista.get(i); // Com o novo tipo de referência Collection, passou a não funcionar
 			System.out.println(oRef);
 		}
 		

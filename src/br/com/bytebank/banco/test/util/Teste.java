@@ -48,14 +48,10 @@ public class Teste {
 			System.out.println(conta);
 		}
 
-		//NumeroDaContaComparator comparator = new NumeroDaContaComparator();
-		TitularDaContaComparator titularComparator = new TitularDaContaComparator();
-
-		lista.sort(null);
-
-		Collections.sort(lista, new NumeroDaContaComparator());
-		Collections.sort(lista);
-		//Collections.reverse(lista);
+		// Para inverter a ordem de lista:
+		
+		Collections.reverse(lista);
+		
 		
 		System.out.println("-------------");
 

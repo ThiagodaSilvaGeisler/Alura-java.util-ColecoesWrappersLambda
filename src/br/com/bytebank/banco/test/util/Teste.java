@@ -43,7 +43,8 @@ public class Teste {
 		lista.add(cc3);
 		lista.add(cc4);
 
-		lista.sort((Conta c1, Conta c2) -> {return Integer.compare(c1.getNumero(), c2.getNumero());});
+		// quanto é só uma linha, o código lambda dispensa chaves e ponto e vírgula	
+		lista.sort((Conta c1, Conta c2) -> Integer.compare(c1.getNumero(), c2.getNumero()));
 		
 		
 		Comparator<Conta> comp = ((Conta c1, Conta c2) -> {		

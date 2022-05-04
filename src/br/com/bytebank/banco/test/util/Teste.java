@@ -55,12 +55,9 @@ public class Teste {
 			}
 		);
 
-		lista.forEach(new Consumer<Conta>() {
-
-			@Override
-			public void accept(Conta conta) {
+		lista.forEach((Conta conta) -> {
 				System.out.println(conta + ", " + conta.getTitular().getNome());				
 			}
-		});
+		);
 	}
 }

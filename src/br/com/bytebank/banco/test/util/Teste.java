@@ -55,9 +55,6 @@ public class Teste {
 			}
 		);
 
-		lista.forEach((Conta conta) -> {
-				System.out.println(conta + ", " + conta.getTitular().getNome());				
-			}
-		);
+		lista.forEach((conta) -> System.out.println(conta + ", " + conta.getTitular().getNome()));
 	}
 }

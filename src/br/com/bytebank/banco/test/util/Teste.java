@@ -48,9 +48,11 @@ public class Teste {
 			System.out.println(conta);
 		}
 
-		// Para inverter a ordem de lista:
+		// Para embrulhar a ordem da lista usa-se o shuffle e para
+		// ratacionar tem o método rotate:
 		
-		Collections.reverse(lista);
+		Collections.shuffle(lista);
+		Collections.rotate(lista, 5); // rotacionar 5 posições
 		
 		
 		System.out.println("-------------");

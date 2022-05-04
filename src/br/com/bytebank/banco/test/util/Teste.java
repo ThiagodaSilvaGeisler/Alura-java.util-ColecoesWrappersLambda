@@ -51,7 +51,7 @@ public class Teste {
 		//NumeroDaContaComparator comparator = new NumeroDaContaComparator();
 		TitularDaContaComparator titularComparator = new TitularDaContaComparator();
 
-		lista.sort(titularComparator);
+		lista.sort(null);
 
 		Collections.sort(lista, new NumeroDaContaComparator());
 		Collections.sort(lista);
